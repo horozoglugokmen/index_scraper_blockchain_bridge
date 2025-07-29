@@ -13,6 +13,7 @@ SMART CONTRACT INTEGRATION:
 - Real-time blockchain transaction processing
 - Compatible with ERC-20 token contracts
 
+- 
 TECHNICAL FEATURES:
 - Anti-detection web scraping techniques
 - Market data extraction with retry mechanisms
