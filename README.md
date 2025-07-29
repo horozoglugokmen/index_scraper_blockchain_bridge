@@ -128,7 +128,7 @@ UPDATE_MINUTE = 1
 ## Smart Contracts
 
 ### Contract Architecture
-- **AABToken**: Main ERC-20 token with dynamic fees
+- **Token**: Main ERC-20 token with dynamic fees
 - **TransferGuard**: Security and fee calculation module
 - **ComplianceModule**: Regulatory compliance and blacklist management
 - **VestingModule**: Token distribution and vesting logic
