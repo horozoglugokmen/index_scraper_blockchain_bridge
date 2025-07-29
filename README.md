@@ -4,12 +4,12 @@ A sophisticated oracle system designed for DeFi applications that implements dyn
 
 ## Overview
 
-This project combines advanced web scraping techniques with blockchain oracle functionality to create a production-ready DeFi token ecosystem. The system automatically adjusts smart contract parameters based on real-time market data using inverse correlation algorithms.
+This project combines web scraping techniques with blockchain oracle functionality to create a production-ready DeFi token ecosystem. The system automatically adjusts smart contract parameters based on real-time market data using inverse correlation algorithms.
 
 ## Key Features
 
 ### Oracle System
-- **Level 5 Anti-Detection**: Advanced browser rotation, behavioral simulation, and timing mechanisms
+- **Anti-Detection**: Advanced browser rotation, behavioral simulation, and timing mechanisms
 - **Dynamic Fee Calculation**: Inverse correlation algorithm (high market index = lower fees)
 - **Real-time Data Processing**: Automated market data extraction with retry mechanisms
 - **Persistent Storage**: CSV/JSON data logging with comprehensive analytics
