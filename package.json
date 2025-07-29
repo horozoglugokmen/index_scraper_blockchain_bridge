@@ -1,0 +1,12 @@
+{
+  "name": "defi-token-oracle-system",
+  "version": "1.0.0",
+  "description": "DeFi Token Project with Oracle Integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test implementation removed for public repository\""
+  },
+  "keywords": ["defi", "token", "oracle", "blockchain", "smart-contracts"],
+  "author": "DeFi Development Team",
+  "license": "MIT"
+} 

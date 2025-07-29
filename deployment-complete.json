@@ -1,0 +1,13 @@
+{
+  "deploymentInfo": {
+    "note": "Deployment details removed for public repository",
+    "description": "This file contains contract deployment addresses and transaction hashes",
+    "networks": {
+      "example": {
+        "chainId": "REDACTED",
+        "contractAddress": "REDACTED",
+        "deploymentHash": "REDACTED"
+      }
+    }
+  }
+} 
