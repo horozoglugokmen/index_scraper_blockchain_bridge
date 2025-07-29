@@ -3,9 +3,9 @@
 DeFi Token Oracle System - Market Index Integration
 =================================================
 
-A sophisticated oracle system designed for Solidity smart contracts that implements
-dynamic fee calculation based on real-time market index data. This component is part
-of a comprehensive DeFi token ecosystem with transfer guards and compliance modules.
+An oracle system for Solidity smart contracts that implements
+dynamic fee calculation based on real-time market index data. This component can be part
+of a DeFi token ecosystem with transfer guards and compliance modules.
 
 SMART CONTRACT INTEGRATION:
 - Automatically updates smart contract fee rates via Web3
@@ -14,17 +14,17 @@ SMART CONTRACT INTEGRATION:
 - Compatible with ERC-20 token contracts
 
 TECHNICAL FEATURES:
-- Advanced anti-detection web scraping (Level 5)
+- Anti-detection web scraping techniques
 - Market data extraction with retry mechanisms
 - Dynamic fee calculation engine
 - Persistent data storage (CSV/JSON)
 - Scheduled automation system
-- Comprehensive error handling and logging
+- Error handling and logging
 
 DEFI USE CASES:
 - Dynamic transaction fee adjustment
 - Market volatility response mechanisms  
-- Automated token economics management
+- Token economics management
 - Real-time contract parameter updates
 
 CONFIGURATION:
@@ -38,7 +38,7 @@ EXECUTION:
     python index_oracle_main.py now    # Single update
     python index_oracle_main.py        # Scheduled mode
 
-NOTE: This is a production-ready component of a larger DeFi token project.
+NOTE: This is a component of a DeFi token project.
 Configure TARGET_URL and TARGET_ELEMENT_ID for your specific market data source.
 """
 
@@ -343,9 +343,9 @@ class DynamicFeeCalculator:
         
         return f"{trend} | Index: {index_value} | Fee: {fee_rate/100:.2f}% ({fee_rate} bp)"
 
-# LEVEL 5 ANTI-DETECTION SYSTEM
-class Level5AntiDetection:
-    """Advanced anti-detection with browser rotation and behavioral simulation"""
+# ANTI-DETECTION SYSTEM
+class AntiDetection:
+    """Anti-detection with browser rotation and behavioral simulation"""
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
@@ -462,7 +462,7 @@ class IndexExtractor:
     
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.anti_detection = Level5AntiDetection()
+        self.anti_detection = AntiDetection()
         
     def extract_index_with_retry(self) -> Optional[Tuple[float, str]]:
         """Extract index value with retry mechanism"""
@@ -677,7 +677,7 @@ class IndexOracleSystem:
                 'fee_rate_bp': fee_rate,
                 'fee_rate_percent': fee_rate / 100,
                 'fee_explanation': fee_explanation,
-                'extraction_method': 'Level5_Oracle_Production_Blockchain',
+                'extraction_method': 'Oracle_Blockchain_Integration',
                 'session_age_minutes': session_age,
                 'blockchain_tx_hash': blockchain_tx_hash or '',
                 'blockchain_status': blockchain_status
@@ -740,7 +740,7 @@ class IndexOracleSystem:
 
 # MAIN EXECUTION
 if __name__ == "__main__":
-    print("Advanced Index Oracle System - Production Ready")
+    print("Index Oracle System")
     print("=" * 80)
     print(f"Target: {OracleConfig.TARGET_URL}")
     print(f"Update Time: {OracleConfig.UPDATE_HOUR:02d}:{OracleConfig.UPDATE_MINUTE:02d} {OracleConfig.TIMEZONE}")
