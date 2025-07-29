@@ -64,10 +64,10 @@ try:
     from eth_account import Account
     WEB3_AVAILABLE = True
 except ImportError:
-    print("⚠️ Web3 not installed. Run: pip install web3 eth-account")
+    print("WARNING: Web3 not installed. Run: pip install web3 eth-account")
     WEB3_AVAILABLE = False
 
-# 📊 MAIN CONFIGURATION
+# MAIN CONFIGURATION
 @dataclass
 class OracleConfig:
     # REPLACE WITH YOUR ACTUAL TARGET
@@ -101,7 +101,7 @@ class OracleConfig:
     MAX_RETRIES = 3
     RETRY_DELAY = 60
     
-    # 🔗 BLOCKCHAIN CONFIGURATION (from environment variables)
+    # BLOCKCHAIN CONFIGURATION (from environment variables)
     RPC_URL = os.getenv('RPC_URL', 'https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY')
     PRIVATE_KEY = os.getenv('ORACLE_PRIVATE_KEY', '')
     CONTRACT_ADDRESS = os.getenv('TRANSFERGUARD_ADDRESS', '')
@@ -113,7 +113,7 @@ class OracleConfig:
     BLOCKCHAIN_RETRY_COUNT = 3
     BLOCKCHAIN_RETRY_DELAY = 30
 
-# 🔗 BLOCKCHAIN BRIDGE CLASS
+# BLOCKCHAIN BRIDGE CLASS
 class BlockchainBridge:
     """Connects oracle to blockchain for automatic contract updates"""
     
@@ -125,7 +125,7 @@ class BlockchainBridge:
         self.account = None
         
         if not WEB3_AVAILABLE:
-            self.logger.warning("🔶 Web3 not available - blockchain updates disabled")
+            self.logger.warning("Web3 not available - blockchain updates disabled")
             return
             
         self._initialize_web3()
@@ -150,7 +150,7 @@ class BlockchainBridge:
             self.w3 = Web3(Web3.HTTPProvider(OracleConfig.RPC_URL))
             
             if not self.w3.is_connected():
-                self.logger.error("❌ Cannot connect to blockchain RPC")
+                self.logger.error("Cannot connect to blockchain RPC")
                 return
             
             # Load account
@@ -261,7 +261,7 @@ class BlockchainBridge:
         self.logger.error("All blockchain update attempts failed")
         return None
 
-# 💰 DYNAMIC FEE CALCULATOR
+# DYNAMIC FEE CALCULATOR
 class DynamicFeeCalculator:
     """Calculates dynamic fees based on index values (inverse correlation)"""
     
