@@ -198,67 +198,10 @@ Low Market Index  → High Transaction Fees (Stressed market conditions)
 - Blockchain interaction statistics
 - System uptime and reliability
 
-## API Integration
-
-### Supported Data Sources
-The system is designed to work with various financial data providers:
-- Custom HTML element targeting
-- Configurable URL endpoints
-- Flexible data parsing logic
-
-### Blockchain Networks
-- **Ethereum Mainnet**
-- **Polygon**
-- **Binance Smart Chain**
-- **Arbitrum**
-- **Optimism**
-- **Testnets**: Sepolia, Mumbai, etc.
-
-## Contributing
-
-### Development Setup
-1. Fork the repository
-2. Create a feature branch
-3. Install dependencies
-4. Configure test environment
-5. Run tests and validations
-
-### Code Standards
-- Follow Python PEP 8 style guide
-- Implement comprehensive error handling
-- Add logging for debugging purposes
-- Write clear documentation
-
-## Production Deployment
-
-### Checklist
-- [ ] Configure real data source URLs
-- [ ] Set up production environment variables
-- [ ] Deploy smart contracts to mainnet
-- [ ] Test oracle functionality thoroughly
-- [ ] Set up monitoring and alerting
-- [ ] Implement backup and recovery procedures
-
-### Scaling Considerations
-- Load balancing for high-frequency updates
-- Database integration for large-scale data storage
-- API rate limiting and caching
-- Distributed oracle network setup
-
-## License
-
-MIT License - see LICENSE file for details
 
 ## Disclaimer
 
 This software is provided for educational and development purposes. Use in production environments requires thorough testing and security audits. The developers are not responsible for any financial losses or security breaches resulting from the use of this software.
-
-## Support
-
-For technical support and questions:
-- Create an issue in the repository
-- Review the documentation thoroughly
-- Check the logs for debugging information
 
 ---
 
